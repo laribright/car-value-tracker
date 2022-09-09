@@ -7,3 +7,22 @@ Content-Type: application/json
     "email": "test@test.com",
     "password": "password"
 }
+
+### Update a new user
+
+PATCH http://localhost:3000/auth/2
+Content-Type: application/json
+
+{
+    "email": "test@test.com",
+    "password": "password"
+}
+
+### Find a user with an id
+GET http://localhost:3000/auth/1
+
+### Find all users with an email
+GET http://localhost:3000/auth?email=test@test.com
+
+### Delete a user with an id
+DELETE  http://localhost:3000/auth/1
