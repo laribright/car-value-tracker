@@ -1,26 +1,27 @@
 ### Create new user
-
 POST http://localhost:3000/auth/signup
 Content-Type: application/json
-
 {
-    "email": "laribright@test.com",
+    "email": "test@test.com",
     "password": "password"
 }
 
 ### Signin USER
-
 POST http://localhost:3000/auth/signin
 Content-Type: application/json
 
 {
-    "email": "laribright@test.com",
+    "email": "test@test.com",
     "password": "password"
 }
 
+### getting a user with id
+GET http://localhost:3000/auth/whoami
+
+### signout a user
+GET http://localhost:3000/auth/signout
 
 ### Update a new user
-
 PATCH http://localhost:3000/auth/2
 Content-Type: application/json
 
