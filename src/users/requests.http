@@ -4,9 +4,20 @@ POST http://localhost:3000/auth/signup
 Content-Type: application/json
 
 {
-    "email": "bright@test.com",
+    "email": "laribright@test.com",
     "password": "password"
 }
+
+### Signin USER
+
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+    "email": "laribright@test.com",
+    "password": "password"
+}
+
 
 ### Update a new user
 
